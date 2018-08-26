@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Förderverein Haus der kleinen Füße e.V.",
-    author: "Benjamin Weber",
-    description: "Vereinshomepage"
+    title: 'Förderverein Haus der kleinen Füße e.V.',
+    author: 'Benjamin Weber',
+    description: 'Vereinshomepage',
   },
   pathPrefix: '/',
   plugins: [
@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/posts`,
-        name: "posts",
+        name: 'posts',
       },
     },
     {
@@ -30,13 +30,13 @@ module.exports = {
               maxWidth: 630,
             },
           },
-          "gatsby-remark-copy-linked-files",
+          'gatsby-remark-copy-linked-files',
         ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
   ],
-}
+};

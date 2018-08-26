@@ -1,46 +1,45 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import '../assets/scss/main.scss'
+import React from 'react';
+import Link from 'gatsby-link';
+import '../assets/scss/main.scss';
 
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
 
 class Template extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: 'is-loading'
-    }
+      loading: 'is-loading',
+    };
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
+      this.setState({ loading: '' });
     }, 100);
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
+      clearTimeout(this.timeoutId);
     }
   }
 
   render() {
-    const { children } = this.props
+    const { children } = this.props;
 
     return (
       <div className={`body ${this.state.loading}`}>
         <div id="wrapper">
-
           {children()}
           <Footer />
         </div>
       </div>
-    )
+    );
   }
 }
 
 Template.propTypes = {
-  children: React.PropTypes.func
-}
+  children: React.PropTypes.func,
+};
 
-export default Template
+export default Template;
