@@ -5,18 +5,18 @@
   "version": "1.0.0",
   "author": "Benjamin Weber",
   "dependencies": {
-    "gatsby": "^1.9.235",
-    "gatsby-image": "^1.0.42",
-    "gatsby-link": "^1.6.39",
-    "gatsby-plugin-google-analytics": "^1.0.24",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.23",
-    "gatsby-plugin-sharp": "^1.6.41",
-    "gatsby-remark-copy-linked-files": "^1.5.30",
-    "gatsby-remark-images": "^1.5.56",
-    "gatsby-source-filesystem": "^1.5.27",
-    "gatsby-transformer-remark": "^1.7.37",
-    "gatsby-transformer-sharp": "^1.6.22",
+    "gatsby": "next",
+    "gatsby-image": "next",
+    "gatsby-link": "next",
+    "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sass": "next",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-remark-copy-linked-files": "next",
+    "gatsby-remark-images": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-remark": "next",
+    "gatsby-transformer-sharp": "next",
     "lodash": "^4.17.5",
     "react-scroll-to-element": "^0.2.0",
     "react-scrollspy": "^3.3.5",
@@ -36,5 +36,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build": "gatsby build"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
   }
 }
